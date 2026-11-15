@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="shop.css">
+    
+</head>
+<body>
+ <section class="navigation-bar">
+    <nav>
+        <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark cross"></i></a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+       <ul class="front-nav">
+        <li><a href="index.html"><p class="logo">theobroma</p></a></li>
+        <li class="hideonmob hov"><a href="index.html">HOME</a></li>
+        <li class="hideonmob hov"><a href="about.html">ABOUT US</a></li>
+        <li class="hideonmob hov"><a href="shop.html">SHOP</a></li>
+        <li class="hideonmob hov"><a href="contact.html">CONTACT US</a></li>
+        <li onclick=showSidebar() class="menu-btn"><a href="#"><i class="fa-solid fa-bars"></a></i></li>
+        <li class="hideonmob"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li> 
+        <li class="hideonmob"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li class="hideonmob"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+        
+        </ul>
+        
+    </nav>
+    </section>
+    
+    <div class="space"></div>
+    <div class="hero">
+        <div class="text">
+        <h1 style="font-size: 45px;">Our Shop</h1><br>
+        <h2>Freshly baked. Lovingly made. Just for you.</h2><br>
+        <p>Explore our wide range of delicious baked treats, handcrafted<br>
+        with high-quality ingredients and a whole lot of love.</p>
+        </div>
+    </div>
+    <div class="genre-heading">
+        <h1 style="text-align:center;">Find your favourite treat</h1>
+    </div>
+    <div class="genre">
+        <button onclick="show('all')" class="product-list item-1">
+            <div class="imge">
+                <img src="img/icon11.png">
+            </div>
+            <div> <h3>All Products</h3></div>
+        </button>
+
+         <button class="product-list item-1" onclick="show('cupcake')">
+            <div class="imge">
+                <img src="img/icon2.jpg">
+            </div>
+            <div> <h3>Cupcakes</h3></div>
+        </button>
+
+         <button class="product-list item-1" onclick="show('donut')">
+            <div class="imge">
+                <img src="img/icon1.png">
+            </div>
+            <div> <h3>Donuts</h3></div>
+        </button>
+
+         <button class="product-list item-1" onclick="show('cookie')">
+            <div class="imge">
+                <img src="img/icon3.jpg">
+            </div>
+            <div> <h3>Cookies</h3></div>
+        </button>
+
+         <button class="product-list item-1" onclick="show('brownie')">
+            <div class="imge">
+                <img src="img/icon4.jpg">
+            </div>
+            <div> <h3>Brownies</h3></div>
+        </button>
+
+        <button class="product-list item-1" onclick="show('cake')">
+            <div class="imge">
+                <img src="img/icon6.png">
+            </div>
+            <div> <h3>Cakes</h3></div>
+        </button>
+
+        <button class="product-list item-1" onclick="show('pastry')">
+            <div class="imge">
+                <img src="img/icon5.png">
+            </div>
+            <div> <h3>Pastries</h3></div>
+        </button>
+
+         <button class="product-list item-1" onclick="show('beverage')">
+            <div class="imge">
+                <img src="img/icon7.jpg">
+            </div>
+            <div> <h3>Beverages</h3></div>
+        </button>
+        <!------------------------------------------>
+    </div>
+    <br><div class="space"></div>
+    <section class="shop">
+    <div class="genre-products">
+        <div class="product-1 donut">
+            <img src="img/don2.jpg">
+            <h2>Classic Chocolate Donut</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        <div class="product-1 donut">
+            <img src="img/don3.jpg">
+            <h2>Strawberry Donut</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+         <div class="product-1 donut">
+            <img src="img/vanilla.jpg">
+            <h2>Vanilla Donut</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+         <div class="product-1 donut">
+            <img src="img/don4.jpg">
+            <h2>Glazed Donut</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        <div class="product-1 cookie">
+            <img src="img/cookie1.jpg">
+            <h2>Choco Chip Cookies</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        <div class="product-1 cookie">
+            <img src="img/cookie6.jpg">
+            <h2>Peanut Butter Cookie</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+         <div class="product-1 cookie">
+            <img src="img/cookie2.jpg">
+            <h2>Choco Chip Cookies</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+         <div class="product-1 pastry">
+            <img src="img/pastry1.jpg">
+            <h2>Eclair Pastry</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        
+        <!--------------------->
+    </div> <div class="space"></div>
+        <div class="genre-products">
+        
+ <div class="product-1 brownie">
+            <img src="img/brownie2.jpg">
+            <h2>Walnut Brownies</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        
+         <div class="product-1 brownie">
+            <img src="img/brownie1.jpg">
+            <h2>Fudge Brownie</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+         <div class="product-1 brownie">
+            <img src="img/brownie3.jpg">
+            <h2>Caramel Brownies</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+         <div class="product-1 brownie">
+            <img src="img/brownie4.jpg">
+            <h2>Cream Cheese Brownie</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        <div class="product-1 cake">
+            <img src="img/cake3.jpg">
+            <h2>Red Velvet Cake</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        <div class="product-1 cake">
+            <img src="img/cake1.jpg">
+            <h2>Black Forest Cake</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        
+         <div class="product-1 cake">
+            <img src="img/cake2.jpg">
+            <h2>Chocolate Truffle Cake</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        <div class="product-1 pastry">
+            <img src="img/pastry2.jpg">
+            <h2>Vanilla Pastry</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+       
+    </div>
+    <!------------------------------->
+
+    <div class="space"></div>
+    <div class="genre-products">
+        
+         <div class="product-1 pastry">
+            <img src="img/pasrty3.jpg">
+            <h2>Cinnamon Pastry</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        <div class="product-1 cupcake">
+            <img src="img/cupcake1.jpg">
+            <h2>Red Velvet Cupcake</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        <div class="product-1 cupcake">
+            <img src="img/cupcake2.jpg">
+            <h2>Strawberry Cupcake</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        <div class="product-1 cupcake">
+            <img src="img/cupcake3.jpg">
+            <h2>Chocolate Cupcake</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        
+         
+        <div class="product-1 beverage" >
+            <img src="img/shake2.jpg">
+            <h2>Iced Coffee</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+       
+         <div class="product-1 beverage">
+            <img src="img/shake4.jpg">
+            <h2>Cold Brew Coffee</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+        <div class="product-1 beverage">
+            <img src="img/shake3.jpg">
+            <h2>Cappuccino</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+         <div class="product-1 beverage">
+            <img src="img/shake1.jpg">
+            <h2>Hot Chocolate coffee</h2>
+            <p><i class="fa-solid fa-star"></i>4.8(120)</p>
+            <h3>Rs.49</h3>
+            <button><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
+        </div>
+    </div> <div class="space"></div>
+   
+    </section>
+    <section class="footer-sec">
+
+    <div class="footer">
+        <div class="foot-1 fbox">
+         <p class="logo">theobroma</p>
+            <p style="line-height: 1.6;color: #d1bdb4;margin-bottom: 20px;">Crafting sweetness with premium ingredients, bringing artisanal baking supplies and delicious recipes staright to your kitchen.</p>
+            <address>451, Mahatma Gandhi Road,Mumbai,
+                Chandigarh - 134109<br>
+                Phone: +6284755557<br>
+                Fax: +111111111
+            </address>   
+        </div>
+        <div class="foot-2 fbox head">
+            <h1>Recent Posts</h1>
+            <p>Behind the Scenes: The Art of Baking</p>
+            <h3>October 5,2026 | No comments</h3>
+            <br>
+            <p>The Science Behind the Sweet </p>
+            <h3>October 5,2026 | No comments</h3>
+        </div>
+        <div class="foot-3 fbox ss head">
+            <h1>Our Stores</h1>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">London SF</a></li>
+            <li><a href="#">Edinburgh</a></li>
+            <li><a href="#">India</a></li>
+            <li><a href="#">Los Angeles</a></li>
+            <li><a href="#">Las Vegas</a></li>
+        </div>
+        <div class="foot-4 fbox ss head">
+            <h1>Useful Links</h1>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Lastest News</a></li>
+            <li><a href="#">Our Sitemap</a></li>
+        </div>
+        <div class="foot-5 fbox ss head">
+            <h1>Footer Menu</h1>
+            <li><a href="#">Instagram Profile</a></li>
+            <li><a href="#">New Collection</a></li>
+            <li><a href="#">Woman Dress</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Latest News</a> </li>
+            <li><a href="#">Purchase Theme</a></li>
+        </div>
+    </div>
+     <div class="copyright">
+           <pre>COPYRIGHT <i class="fa-regular fa-copyright"></i> 2026 BLOSSOM  DESIGN BY RAJESH
+  TERM OF USE  PRIVACY POLICY  COOKIE POLICY</pre>
+        </div>
+
+    </section>
+
+
+     <script>
+        function showSidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='flex'}
+        function hideSidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='none'}
+
+        function show(category){
+            let products=document.getElementsByClassName("product-1");
+            for(let i=0;i<products.length;i++){
+                if(category==="all" || products[i].classList.contains(category)) {
+                    products[i].style.display="";
+                }
+                else{
+                     products[i].style.display="none";
+                }
+            }
+        }
+        </script>
+    </body>
+    </html>

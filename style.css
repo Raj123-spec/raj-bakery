@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    min-height:100vh;
+    background-color: #fbf8f3;
+}
+.logo{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:3rem;
+  color:white;
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.6),
+               0 0 10px rgba(255, 255, 255, 0.4),
+                0 0 21px rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+}
+.logo:hover{
+    color: white !important;
+}
+
+nav{
+    background-color:#fdf0f4;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    width:100%;
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height:75px;
+}
+nav a{
+    height:100%;
+    font-family:'Times New Roman', Times, serif;
+    padding:0 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    
+
+}
+nav a:hover{
+    color:deeppink;
+    font-size: 20px;
+    transition: 0.3 ease;
+    font-weight: 700;
+    cursor:pointer;
+    opacity: 0.6;
+}
+nav li:first-child{
+    margin-right: auto;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width:250px;
+    z-index:999 !important;
+    backdrop-filter:blur(10px);
+    background-color: rgba(255, 255, 255, 0.204);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.2);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width:100%;
+}
+.cross{
+    font-size: 24px;
+}
+.menu-btn{display:none;
+    font-size: 25px;}
+
+@media(max-width:800px)
+{
+    .hideonmob{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+@media(max-width:400px){
+    .sidebar{
+        width:100%;
+    }
+}
+.hideonmob{
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    letter-spacing:0.5px;
+    text-transform: capitalize;
+}
+.navigation-bar{
+    position:fixed;
+    width:100%;
+}
+.footer{
+    height:auto;
+    min-height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+     background-color: #261612;
+    color: #5c4a43;
+    display: grid;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap:40px;
+    grid-template-columns: 2.2fr 1.8fr 1.2fr 1.2fr 1.2fr;
+    color:#fcfaf7;
+}
+.footer .logo{
+    margin-top:-10px;
+}
+@media (max-width:800px) {
+    .footer{
+        grid-template-columns:repeat(auto-fit,400px);
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:450px){
+     
+.footer-sec{
+        width: 100%;
+    }
+    
+}
+
+
+.ss p{
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    padding-top: 10px;
+}
+.ss{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ss li{
+    margin-bottom: 12px;
+}
+.ss a{
+    color:#d1bdb4;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    display: inline-block;
+}
+.head h1{
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.copyright{
+    height:6.5vh;
+    width: 100%;
+    background-color: #261612;
+    text-align: center;
+    color: #ffffff;
+    font-family: monospace;
+    font-size:.9rem;
+    border-top:1.5px solid whitesmoke;
+}
+.copyright pre{
+    margin-top:4px;
+}
+nav ul li:nth-last-child(-n+3) a{
+    padding: 0 10px;
+}
+.front-nav .hov{
+    background-image:linear-gradient(#d4af37,#d4af37);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s ease-in-out;
+}
+.front-nav .hov:hover{
+    background-size: 100% 4px;
+    color:#d4af37;
+}
+.front-nav{
+    background-color:#261612;
+    backdrop-filter: blur(15px);
+    border-bottom: 1 px solid rgba(255, 255, 255, 0.25);
+    box-shadow:0 4px 30px rgba(0,0,0,0.03);
+}
+.front-nav .hov a{
+    color:whitesmoke;
+}
+.fa-magnifying-glass,.fa-cart-shopping,.fa-user{
+    color: #ffffff;
+}
+.space{
+    height:8vh;
+    width: 100%;
+    background-color: #fbf8f3;
+}
+
