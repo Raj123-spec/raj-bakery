@@ -7,7 +7,7 @@
      background-color: #fbf8f3;
 }
 .part1{
-    background-image:linear-gradient(rgba(255,255,255,0.4)),url('img/more/bg.jpg');
+    background-image:linear-gradient(rgba(255,255,255,0.4)),url('bg.jpg');
     background-size:cover;
     background-position:center center;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ strong{
     font-weight: 700;
 }
 .tq{
-    background-image:linear-gradient(rgba(255,255,255,0.4)),url('img/more/tq.jpg');
+    background-image:linear-gradient(rgba(255,255,255,0.4)),url('tq.jpg');
     background-size:cover;
     background-position:center center;
     background-repeat: no-repeat;
