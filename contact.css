@@ -1,6 +1,6 @@
 
 .one{
-    background-image:linear-gradient(rgba(255,255,255,0.4)),url('img/more/conbg.jpg');
+    background-image:linear-gradient(rgba(255,255,255,0.4)),url('conbg.jpg');
     background-size:cover;
     background-position: center ;
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@ form select,textarea,#submit,#reset{
     border-radius:62px 0 62px 0;
 }
 .discount{
-    background-image:linear-gradient(rgba(255,255,255,0.2)),url('img/more/diwalibg.jpeg');
+    background-image:linear-gradient(rgba(255,255,255,0.2)),url('diwalibg.jpeg');
     background-size:cover;
     background-position:bottom center;
     background-repeat: no-repeat;
